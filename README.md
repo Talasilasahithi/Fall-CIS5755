@@ -1,3 +1,6 @@
 # Fall-CIS5755
-# sahithi talasila
-# sxt34220@ucmo.edu
+### sahithi talasila
+### sxt34220@ucmo.edu
+
+This is the course project 
+
