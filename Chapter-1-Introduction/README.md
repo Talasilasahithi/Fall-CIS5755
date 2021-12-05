@@ -1,17 +1,17 @@
 ----------------------------------------
-# 1. Group information
+## 1. Group information
 ----------------------------------------
 Sahithi Talasila - sxt34220@ucmo.edu -700713422 
 Jyothsna Korada - jxk59660@ucmo.edu - 700725966
 
 ---------------------------------------
-# 2. Github URL
+## 2. Github URL
 ---------------------------------------
 
 https://github.com/Talasilasahithi/Fall-CIS5755.git
 
 ----------------------------------------------------------------------------------
-# 3. How your group work together (activities, hours used for each activity etc)?
+## 3. How your group work together (activities, hours used for each activity etc)?
 ----------------------------------------------------------------------------------
 
 We have discussed regarding basics of Source Code Management with Github and cloud 9 environments in AWS.
@@ -42,7 +42,7 @@ We have followed the instructions available in the Lab activity Source Code Mana
 Total time is taken for the group project -- 2 hours 30 min
 
 ------------------------------ 
-# 4. Project introduction
+## 4. Project introduction
 ------------------------------
 
 In a project, files are stored in a Cloud9 development environment to some common repository outside this EC2 VM. Like, many developers working on the same project, and each of them may want to add or make changes to files and store them outside of their environment into some commonplace. This is where GitHub.com comes in.
@@ -50,7 +50,7 @@ In this group lab project, we integrated the Cloud9 environment and Github by us
 Flask is a web application framework written in Python. We have written a simple program where our names are printed successfully.
 
 --------------------------------------------
-# 5. Major Steps
+## 5. Major Steps
 --------------------------------------------
 
 1. We signed in to Github and created a new repository.
