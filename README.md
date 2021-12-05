@@ -1,6 +1,8 @@
 # Fall-CIS5755
-### sahithi talasila
-### sxt34220@ucmo.edu
+### Group lab project 
+## sahithi talasila - sxt34220@ucmo.edu
+## jyothsna korada - jxk59660@ucmo.edu
+
 
 This is the course project 
 
