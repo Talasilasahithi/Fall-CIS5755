@@ -1,111 +1,74 @@
-# Lab: Source Code Management with Github
+----------------------------------------
+# 1. Group information
+----------------------------------------
+Sahithi Talasila - sxt34220@ucmo.edu -700713422 
+Jyothsna Korada - jxk59660@ucmo.edu - 700725966
 
-----------------------------------------------------
-### Github and Cloud9 setup using Personal Access Token:
------------------------------------------------------ 
-1. Login Github and Create a repository
-2. get familiar with account profile --> settings -->Developer Settings -->Personal Access Tokens 
-3. Click "Generate New Token" 
-   a. Provide a Note such as "CIS5755"
-   b. Select Expiration Date
-   c. Select scopes
-4. Click "Generate token", copy and paste the token in a temporary place
-5. Create a new cloud9 environment
-6. Delete the README.md file
-7. git config --global credential.helper store
-8. Go to Github and copy the repository URL
-9. Go to Cloud9 terminal and clone the repository
-  a. Type: git clone + repository URL
-  b. enter your github username
-  c. Copy and paste teh token for password
-10. Change directory to the new folder
-11. Create a project directory (e.g. mkdir Chapter-1)
-12. Change to the new directory
-13. Create python envionrment: python3 -m venv env
-14. To activate the envionrment: source env/bin/activate
-15. Create a python file named ex1-print.py
-16. Edit the python file
-  a. Open the file
-  b. Enter a line of code
-  c. Run the file
-17. While keeping the current terminal window for project,  open a new terminal for git to manage the source code) 
+---------------------------------------
+# 2. Github URL
+---------------------------------------
 
-18. git add --all
-19. git status
-20. git commit -m "first python code"
-21. git push
-  a. github username:
-  b. password: copy and paste the account access token
-22. check the changes by using: git log
-23. Go to Github repository to check the changes
-24. Go to Cloud9 and create a second python file: ex2-flask.py
-25. Edit the file by copy/paste the basic Flask code
-26. Save and Run the file
-27. In the terminal, install Flask package (library): python3 -m pip install flask
-28. In the terminal, run the file: python3 ex2-flask.py
-29. To view the app, go to Tools menu, select Preview --> Preview Running App
-30. To stop the service, press Ctrl + C
-31. To add dependency control file requirements.txt using command:  pip freeze > requirements.txt
-32. In the git terminal, enter command step 17-21
-   a. change commit comment to "First Flask example"
+https://github.com/Talasilasahithi/Fall-CIS5755.git
 
-33. Create an instruction markdown file for Chapter 1
-   a. Edit the file by copy/paste this lab instructions
-   b. Add basic markdown styles
-   c. Save the file
-34. In the git terminal, enter command step 17-21
-   a. change commit comment to "First Instruction File"
+----------------------------------------------------------------------------------
+# 3. How your group work together (activities, hours used for each activity etc)?
+----------------------------------------------------------------------------------
+
+We have discussed regarding basics of Source Code Management with Github and cloud 9 environments in AWS.
 
 
----------------------------------------------
-## Github and Cloud9 setup using SSH
--------------------------------------------
-1. Login Github and Create a repository
-2. get familiar with account profile --> settings 
-3. Create a new cloud9 environment
-4. Delete the README.md file
-5. Create ssh key for git to clone the project
-ssh-keygen -t rsa
-6. Display the public key using cat command
-7. Copy the public key
-8. Go to github account settings --> SSH and GPG keys --> New SSH key 
-9. Paste the public key and enter a title
-10. Click "Add SSH key"
-11. Copy the repository URL
-12. Go to Cloud9 terminal and clone the repository
-  a. Type: git clone + repository URL
-  b. Yes
+We have followed the instructions available in the Lab activity Source Code Management with Github and completed the group lab project.
 
-13. Change directory to the new folder
-14. Create a project directory (e.g. mkdir Chapter-1)
-15. Change to the new directory
-16. Create python envionrment: python3 -m venv env
-17. activate the envionrment: source env/bin/activate
-18. Create a python file named ex1-print.py
-19. Edit the python file
-  a. Open the file
-  b. Enter a line of code
-  c. Run the file
-20. While keeping the current terminal window for project,  open a new terminal for git to manage the source code) 
-21. git add --all
-22. git status
-23. git commit -m "first python code"
-24. git push
-  a. github username:
-  b. password: copy and paste the account access token
+1. Firstly we have logged into Github and created the repository.
+2. Generated the new token and copied the token in a temporary place.
+3. New cloud9 environment is created and the README.md file is deleted.
+   Time taken for the above steps --30 minutes.
+4. In the cloud9 terminal command git config --global credential.helper store is executed.
+5. In the cloud9 terminal to clone the repository Github username and token as a password is entered.
+    Time taken for the above steps ----- 35 minutes.
+6.  New project directory chapter-1- Introduction is created.
+7. Created the python environment using the command: python3 -m venv env
+8. Environment is activated using the command: source env/bin/activate
+9. New python file named ex1.py is created.
+10. While keeping the current terminal window for the project,  open a new terminal for git to manage the source code) 
+11. git add --all
+12. git status
+13. git commit -m "first python code"
+14. git push
+    Time taken for the above steps ------ 40 minutes.
+15. In a similar way ex2.flask.py is created and pushed to the git repository.
+    Time taken for the above steps ----- 20 minutes.
 
-25. check the changes by using: git log
-26. Go to Github repository to check the changes
+Total time is taken for the group project -- 2 hours 30 min
 
------------------------------------------------------------------
+------------------------------ 
+# 4. Project introduction
+------------------------------
 
+In a project, files are stored in a Cloud9 development environment to some common repository outside this EC2 VM. Like, many developers working on the same project, and each of them may want to add or make changes to files and store them outside of their environment into some commonplace. This is where GitHub.com comes in.
+In this group lab project, we integrated the Cloud9 environment and Github by using personal token.
+Flask is a web application framework written in Python. We have written a simple program where our names are printed successfully.
+
+--------------------------------------------
+# 5. Major Steps
+--------------------------------------------
+
+1. We signed in to Github and created a new repository.
+2. We generated a new token and created a new cloud9 environment.
+3. Cloned remote GitHub repository in the environment.
+4. Python flask is created
+4. Adding files to local Git repository by using git add --all.
+5. Commit staged files to local git repository by using the command: python3 -m venv env "first python code"
+6. To push the files to the git repository command: git push is used.
+
+-------------------------
 ## Basic Flask Code
-
+-------------------------
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')
-def hello_world():
-   return 'Hello World'
+def login():
+   return 'Sahithi Talasila and jyothsna korada'
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug = True)
 
